@@ -33,20 +33,20 @@ gsap.fromTo("#image", {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("copy-to-clip").addEventListener("click", () => {
-        gsap.to(".thing", {
-            duration: 0.25,
-            morphSVG: ".check",
-            color: "#22c55e"
-        });
+    // document.getElementById("copy-to-clip").addEventListener("click", () => {
+    //     gsap.to(".thing", {
+    //         duration: 0.25,
+    //         morphSVG: ".check",
+    //         color: "#22c55e"
+    //     });
 
-        gsap.to(".thing", {
-            delay: 1,
-            duration: 0.25,
-            morphSVG: ".thing",
-            color: "#fff"
-        });
-    });
+    //     gsap.to(".thing", {
+    //         delay: 1,
+    //         duration: 0.25,
+    //         morphSVG: ".thing",
+    //         color: "#fff"
+    //     });
+    // });
     
     gsap.fromTo(".box-1", { y: 25, opacity: 0 },
     {
