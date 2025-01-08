@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog 01/06/2025</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="./output.css" rel="stylesheet">
+    <script src="./script.ts"></script>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-zinc-900 h-screen w-screen overflow-x-hidden" id="changelog">
+    <main>
+        <div id="navbar" class="flex justify-between pt-0.5 pb-1 items-center overflow-hidden md:pr-12 md:pl-12 sm:px-0 truncate">
+            <a href="index.html">
+                <div class="flex items-center pl-2" id="navbar-buttons">
+                    <svg class="size-5 text-gray-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M5 13.17a3.001 3.001 0 0 0 0 5.66V20a1 1 0 1 0 2 0v-1.17a3.001 3.001 0 0 0 0-5.66V4a1 1 0 0 0-2 0v9.17ZM11 20v-9.17a3.001 3.001 0 0 1 0-5.66V4a1 1 0 1 1 2 0v1.17a3.001 3.001 0 0 1 0 5.66V20a1 1 0 1 1-2 0Zm6-1.17V20a1 1 0 1 0 2 0v-1.17a3.001 3.001 0 0 0 0-5.66V4a1 1 0 1 0-2 0v9.17a3.001 3.001 0 0 0 0 5.66Z"/>
+                    </svg>
+                    <div class="p-2 text-base font-bold text-white">Custom Discord Theme</div>
+                </div>
+            </a>
+            <div class="flex gap-0.5">
+                <div class="flex items-center justify-center pl-2.5 pr-1.5 text-white rounded-full cursor-pointer transition-colors">
+                    <a href="changelogs.html">
+                        <div class="flex items-center pr-1 pl-3" id="navbar-buttons">
+                            <svg class="size-5 text-gray-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v13H7a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M9 3v14m7 0v4"/>
+                            </svg>                      
+                            <div class="p-1 pr-2 font-medium text-white">Posts</div>
+                        </div>
+                    </a>
+                </div>
+                <button id="button-change-theme" class="items-center navbar-buttons-color p-1 mr-1.5">
+                    <svg class="w-6 h-6 light:text-gray-800 text-white" id="sun" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" class="sun" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5V3m0 18v-2M7.05 7.05 5.636 5.636m12.728 12.728L16.95 16.95M5 12H3m18 0h-2M7.05 16.95l-1.414 1.414M18.364 5.636 16.95 7.05M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/>
+                        <path stroke="currentColor" stroke-linecap="round" class="moon opacity-0" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-red-400 gap-5 py-3 border-2 border-solid border-y-red-700 border-x-transparent select-none w-full" id="warning-bar">
+            <div class="flex justify-center items-center text-gray-50">
+                <div class="absolute left-0 rounded-full navbar-buttons-color-2 w-fit ml-12 p-2 cursor-pointer" id="expand-button">
+                    <svg id="close-button" class="w-6 h-6 text-gray-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-center text-lg font-medium">Site still in beta!</p>
+                    <p class="text-center mt-2" id="warning-text">Expect rough phone support and things to be missing or broken.</p>
+                </div>              
+                <div class="cursor-pointer navbar-buttons-color-2 p-1 px-2 rounded-full w-fit absolute right-12" id="warning">
+                    <span class="material-symbols-rounded text-bg-teal-50">close</span>
+                </div>
+            </div>
+        </div>
+    
+        <section id="text-area" class="pt-10">
+            <div class="md:px-48">
+                <div class="flex sm:gap-0 md:gap-3 md:text-5xl select-none w-fit mx-auto" id="bigtextdiv">
+                    <h1 class="md:text-4xl text-white font-bold" id="bigtext">Changelog 01/06/2025</h1>                   
+                </div>
+                <p class="border-solid border-gray-100 border-b-2 p-3"></p>
+                <p class="p-2"></p>
+                <p class="text-xl text-white mt-2">The last few days have been rough with working on something secret, but now I can show it!</p>
+                <p class="text-xl text-white mt-2">
+                    Hello everyone! This is the first changelog of this new website I have created. This one will not be focused on any changes of the theme (as I have taken a little break) but will instead talk about this website and the process of making it.
+                </p>
+                <h2 class="mt-6 text-white font-semibold text-2xl">Why did I start this project?</h2>
+                <p class="text-xl text-white mt-2">
+                    Let me just start by saying that I know basically nothing web-related. The only thing I knew prior to starting this project was CSS (obviously) and some stuff about HTML5. Apart from that, everything was new.
+                </p>
+                <p class="text-xl text-white mt-2">
+                    I already knew some code logic, which made the learning of some basic JavaScript things easier, but let me tell you, that thing for me is basically non-sense. It's so different from what I normally code and read that just understanding basic stuff was a nightmare.
+                </p>
+                <p class="text-xl text-white mt-2">
+                    Anyway, I decided to make this website because recently I have been trying to learn more about web technologies, and since I learn better when actually putting in the work, I decided this would be the perfect opportunity!
+                </p>
+                <p class="text-xl text-white mt-2">
+                    I started by learning about Tailwind, because from creating the theme I learned CSS is horrible to work with and can take a lot of space for just some fancy thing. After that I started working. I didn't plan anything prior to starting coding, I just had a rough idea of what I wanted. The layout changed a ton, and there's still some work I have to do to make this website usable (that's why all pages have a warning).
+                </p>
+                <h2 class="mt-6 text-white font-semibold text-2xl">The building process (and the obstacles that came with it)</h2>
+                <p class="text-xl text-white mt-2">
+                    Just the first page was so difficult that I took 2 (almost) full days to complete. The hardest part was honestly not giving up because it's so frustating to have something so apparently easy in your hands and still not be able to accomplish what you want/have to. I guess this experience gave me some philosophic knowledge. To everyone reading this (no one), just remember that the most important part of everything that happens with you is the learning with that.
+                </p>
+                <h2 class="mt-6 text-white font-semibold text-2xl">After the first page: success</h2>
+                <p class="text-xl text-white mt-2">
+                    Anyway, after about 2 days of building the first website, I had learned a lot. I had gotten the basics of JS (nothing that much) understood and now I actually prefer to do some stuff in JS instead of another more normal way.
+                </p>
+                <p class="text-xl text-white mt-2">
+                    I decided then that this project could be much more than just a website introducing this dumb theme, it could be my own little space that I could use to express how the development of the project is going, my frustations, my acomplishments, etc. I decided then to make a page dedicated to changelogs. I decided not to put everything in the same page as it would leave the code pretty messy as well as the layout itself. The changelog was finished in about 30 minutes or less, since everything I needed I could just grab from the main page. The page was so easy that no JS was needed (only for an animation but I don't consider that)
+                </p>
+                <p class="text-xl text-white mt-2">
+                    Now this is the first changelog that I'm using this page instead of using GitHub. As of writing I have not published this website as I want to iron-out some stuff, like phone support, animations, the layout, colors, etc. Maybe I even add some sort of smart reload that only reloads certain parts of the website. I heard HTMX was a good choice but I couldn't understand that much how it worked and honestly I was worried with other more important things.
+                </p>
+                <h2 class="mt-6 text-white font-semibold text-2xl">What is the license this website uses? Can I help to improve it?</h2>
+                <p class="text-xl text-white mt-2">
+                    I want to just say right now that everything sorrounding this theme WILL be open source and under the GPL-3 license. Heck, if I find a more oepn and free (as in libre), I might change to that. I love open source projects and I love the freedom and the community sorrounding it. If someone is reading this and you find a bug anywhere, you can create a Issue in the GitHub Repo (although I might create a system here since it would be better, because everytihng would be in the same space. Not sure though).
+                </p>
+                <h2 class="mt-6 text-white font-semibold text-2xl">Problems that I'm trying to fix</h2>
+                <p class="text-xl text-white mt-2">
+                    Giving a site a proper phone support is a real pain in the ass. Right now the website almost works entirely on phones, but the image pop-up that I wrote 30 minutes ago doesn't really work and I don't know why 🤷
+                    I'll probably figure it out eventually but right now that's the first problem.
+                </p>
+                <p class="text-xl text-white mt-2">
+                    Second problem is that the warning banner doesn't save the info that you already closed it once, even though it's supposed to work with the current code.
+                </p>
+                <p class="text-xl text-white mt-2">
+                    I also have to add the animations to all elements (I figured out how to add it after 4 hours). This alone will take a while because I'm picky with what I do so I'll be tweaking this for an entire afternoon.
+                </p>
+                <p class="text-xl text-white mt-2">
+                    These issues will <i>eventually</i> get fixed but right now they're really annoying and demotivating to see. Oh! And I also have to fix the pop-up layout because it looks <b>horrible!</b>
+                </p>
+            </div>
+            <p class="p-3"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

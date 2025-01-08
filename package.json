@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "gsap": "^3.12.5",
+    "typescript": "^5.7.3",
+    "viewerjs": "^1.11.7"
+  }
+}
