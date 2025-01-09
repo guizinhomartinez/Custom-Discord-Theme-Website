@@ -114,24 +114,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // document.querySelector(".box-1").appendChild(div2);
 
     tooltip2.style.opacity = "0";
-    tooltip2.className = "navbar-buttons-color-2";
     tooltip2.id = "tooltip-2";
     tooltip2.innerHTML = "Try clicking me!";
-    tooltip2.classList.add("italic", "px-4", "py-2" , "cursor-pointer", "w-fit", "rounded-full", "mt-1.5", "ml-auto");
+    tooltip2.classList.add("tooltip", "italic", "px-4", "py-2" , "cursor-pointer", "w-fit", "rounded-lg", "mt-1.5", "ml-auto");
     document.querySelector(".box-2").appendChild(tooltip2);
 
     tooltip3.style.opacity = "0";
-    tooltip3.className = "navbar-buttons-color-2";
     tooltip3.id = "tooltip-3";
     tooltip3.innerHTML = "Try clicking me!";
-    tooltip3.classList.add("italic", "px-4", "py-2" , "cursor-pointer", "w-fit", "rounded-full", "mt-1.5", "ml-auto");
+    tooltip3.classList.add("tooltip", "italic", "px-4", "py-2" , "cursor-pointer", "w-fit", "rounded-lg", "mt-1.5", "ml-auto");
     document.querySelector(".box-1").appendChild(tooltip3);
 
     tooltip4.style.opacity = "0";
-    tooltip4.className = "navbar-buttons-color-2";
     tooltip4.id = "tooltip-4";
     tooltip4.innerHTML = "Try clicking me!";
-    tooltip4.classList.add("italic", "px-4", "py-2" , "cursor-pointer", "w-fit", "rounded-full", "mt-1", "ml-auto");
+    tooltip4.classList.add("tooltip", "italic", "px-4", "py-2" , "cursor-pointer", "w-fit", "rounded-lg", "mt-1", "ml-auto");
     document.querySelector(".box-3").appendChild(tooltip4);
 
     document.querySelector(".box-2").addEventListener("mouseover", (event) => {
@@ -231,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
             click3 = click3 + 1;
         }
         if (click3 === 1) {
-            document.getElementById("expand-button").style.rotate = "-180deg";
+            document.getElementById("expand-button").style.rotate = "180deg";
         } else if (click3 === 2) {
             document.getElementById("warning-text").style.display = "none";
             document.getElementById("expand-button").style.rotate = "0deg";

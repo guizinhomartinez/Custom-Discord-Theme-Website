@@ -4,14 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*:not(different, different-2, .material-symbols-rounded, code, pre, h1) {
+*:not(different, different-2, .material-symbols-rounded, code, pre, h1, h3, h2) {
     box-sizing: border-box;
-    font-family: "Geist" !important;
+    font-family: "Inter" !important;
 }
 
 :root {
     --background-color: rgb(24, 24, 27);
-    --boxes-bg: rgba(255, 255, 255, 10%)
+    --boxes-bg: rgba(255, 255, 255, 10%);
+    --border-color: rgba(24, 24, 17, 50%);
 }
 
 .light {
@@ -27,8 +28,8 @@
     background-color: var(--background-color);
 }
 
-h1 {
-    font-family: "Be Vietnam Pro" !important;
+h1, h3, h2 {
+    font-family: "Bricolage Grotesque" !important;
 }
 
 p, h1, h2, h3, div {
@@ -149,6 +150,16 @@ body {
 
 #tooltip:not(p, h1, h2, h3) {
     backdrop-filter: blur(12px) !important;
+}
+
+.tooltip {
+    background-color: rgba(148,163,184, 50%);
+    transition: .5s;
+    border: 2px solid var(--border-color);
+}
+
+.tooltip:hover {
+    background-color: rgba(148,163,184, 75%);
 }
 
 .material-symbols-rounded {

@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Discord Theme</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="script.ts"></script>
     <link href="./output.css" rel="stylesheet">
     <!-- <script src="./script.ts"></script> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,600,0,0&icon_names=arrow_forward" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-zinc-900 h-screen w-screen overflow-x-hidden" id="mainpage">
     <main>
@@ -87,10 +85,10 @@
             </div>
         </div>
 
-        <div class="bg-red-400 py-3 border-2 border-solid border-y-red-700 border-x-transparent select-none w-full" id="warning-bar">
-            <div class="flex justify-center items-center text-white">
+        <div class="bg-red-400 gap-5 py-3 border-2 border-solid border-y-red-700 border-x-transparent select-none w-full" id="warning-bar">
+            <div class="flex justify-center items-center text-gray-50">
                 <div class="absolute left-0 rounded-full navbar-buttons-color-2 w-fit ml-12 p-2 cursor-pointer" id="expand-button">
-                    <svg id="close-button" class="w-6 h-6 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <svg id="close-button" class="w-6 h-6 text-gray-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
                     </svg>
                 </div>
@@ -141,7 +139,7 @@
                 <div class="p-5"></div>
                 <div class="grid mt-5 justify-between gap-5 sm:grid-cols-1 md:grid-cols-3" id="grid">
                     <div class="box-1 box-club" id="boxes">
-                        <h3 class="font-bold text-3xl text-clip overflow-hidden">Rounded Corners, Everywhere</h3>
+                        <h3 class="font-bold text-3xl text-clip overflow-hidden font-[font-family: 'Bricolage Grotesque']">Rounded Corners, Everywhere</h3>
                         <p class="">Now all the pointy corners are rounded and easy on the eyes.</p>
                     </div>
                     <div class="box-2 box-club" id="boxes">
@@ -279,7 +277,7 @@
             </div>
         </section>
 
-        <section id="changelogs" class="mx-auto gap-5 pt-20 z-10 w-fit mb-10">
+        <section id="changelogs" class="mx-auto gap-5 pt-20 z-10 w-fit mb-10 select-none">
             <div class="mt-10 mr-10 ml-10">
                 <div class="m-auto">
                     <h1 class="text-center text-white text-5xl font-bold mb-3">Changelogs</h1>

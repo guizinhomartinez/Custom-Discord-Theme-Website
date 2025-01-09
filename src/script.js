@@ -2,22 +2,38 @@ let click = 0;
 let click2 = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("button-change-theme").onclick = function() {
-        click += 1;
-
+    function changeTheme(isLightTheme) {
         document.body.style.transition = "all 0.25s";
 
-        if (click == 1) {
+        if (isLightTheme) {
             document.body.classList.add("bg-zinc-200", "light");
             document.body.classList.remove("bg-zinc-900");
             localStorage.setItem('isLight', true);
         } else {
             document.body.classList.add("bg-zinc-900");
             document.body.classList.remove("bg-zinc-200", "light");
-            click = 0;
             localStorage.setItem('isLight', false);
         }
     }
+    if (document.getElementById("button-change-theme")) {
+        document.getElementById("button-change-theme").onclick = function() {
+            click++;
+
+            if (click == 1) {
+                changeTheme(true);
+            } else {
+                changeTheme(false);
+                click = 0;
+            }
+        }
+    }
+
+    document.onkeydown = function(evt) {
+        if (evt.key === "F" || evt.key === "F") {
+            changeTheme(true);
+        }
+    }
+
 
     if (localStorage.getItem('isLight') === 'true') {
         document.body.classList.add("bg-zinc-200", "light");
